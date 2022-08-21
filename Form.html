@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre Aqui</title>
+</head>
+<body>
+    <div>
+        <h1>Novo Cadastro</h1>
+            <p>Insira aqui seus dados</p>
+    </div>
+
+    <form action="">
+            <!--Campo de nome-->
+            <div>
+               <label for="nome">Nome</label>
+               <input type="text" name="nome" id="nome" placeholder="Nome Completo">
+            </div>
+            
+            <!--Campo de email-->
+            <div>
+                <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="exemplo@qualquer.com"> 
+            </div>
+            
+            <!--Campo de senha-->
+            <div>
+                <label for="senha">Senha</label>
+                    <input type="password" id="senha" pattern="[a-zA-Z0-9]{8}" placeholder="Palavra-Passe" name="senha" value=""><br>
+            </div>
+
+            <!--Campo de telefone-->
+            <div>
+                <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" pattern="([0-9]{2})[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxxx-xxxx" value="">
+            </div>
+
+            <!--Campo do sexo -->
+            <div>
+                <label>Sexo</label>
+                <!--masculino-->
+                <label >
+                    <input type="radio" name="sexo" value="masculino" checked>Masculino
+                </label>
+                <!--feminino-->
+                <label >
+                    <input type="radio" name="sexo" value="feminino">Feminino
+                </label>
+            </div>
+
+            <!--Campo de data de nascimento-->
+            <div>
+                <label for="date">Data de Nascimento</label>
+                    <input type="date" id="data" name="data" value="">
+            </div>
+
+            <!--Campo de Endereço-->
+            <div>
+                <label for="endereço">Endereço</label>
+                    <input type="text" name="endereço" id="endereço" placeholder="Logradouro, nº - Bairro">
+            </div>
+
+            <!--Campo de Complemento-->
+            <div>
+                <label for="complemento">Complemento</label>
+                    <input type="text" name="complemento" id="complemento" placeholder="Referência, Apto, Bloco, etc..">
+            </div>
+
+            <!--Campo de Cidade-->
+            <div>
+                <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade" placeholder="Cidade">
+            </div>
+            
+            <!--Campo de Escolha de Estado-->
+            <div>
+                <label for="estado">Estado</label>
+                    <select id="estado" name="estado">
+                        <option value="0">Selecione</option>
+                        <option value="1">Acre</option>
+                        <option value="2">Alagoas</option>
+                        <option value="3">Amapá</option>
+                        <option value="4">Amazonas</option> 
+                        <option value="5">Bahia</option>
+                        <option value="6">Ceará</option>
+                        <option value="7">Distrito Federal</option>
+                        <option value="8">Espirito Santo</option> 
+                        <option value="9">Goiás</option>
+                        <option value="10">Maranhão</option>
+                        <option value="11">Mato Grosso</option>
+                        <option value="12">Mato Grosso do Sul</option> 
+                        <option value="13">Minas Gerais</option>
+                        <option value="14">Pará</option>
+                        <option value="15">Paraíba</option>
+                        <option value="16">Paraná</option> 
+                        <option value="17">Pernambuco</option>
+                        <option value="18">Piauí</option>
+                        <option value="19">Rio de Janeiro</option>
+                        <option value="20">Rio Grande do Norte</option> 
+                        <option value="21">Rio Grande do Sul</option>
+                        <option value="22">Rondônia</option>
+                        <option value="23">Roraima</option>
+                        <option value="24">Santa Catarina</option> 
+                        <option value="25">São Paulo</option>
+                        <option value="26">Sergipe</option>
+                        <option value="27">Tocantins</option>
+                    </select>    
+            </div>
+
+            <!--Sobre Você-->
+            <div>
+                <label for="sobre">Biografia</label><br>
+                <textarea name="sobre" id="sobre" cols="30" rows="10">Fale um pouco sobre você</textarea>
+            </div>
+
+            <!--Newsletter-->
+            <div>
+                <input type="checkbox">
+                <label for="checkbox">Aceito Receber notícias e promoções via E-Mail;</label>
+            </div>
+    </form>
+</body>
+</html>
